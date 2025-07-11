@@ -1,3 +1,8 @@
+// Home.tsx
+// The landing "About" page of the portfolio.
+// Introduces who I am, what I do, tools I use, and contact information.
+// Structured with <section> blocks and styled dividers.
+
 export default function Home() {
   return (
     <div>

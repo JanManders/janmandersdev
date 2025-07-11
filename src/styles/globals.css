@@ -1,0 +1,42 @@
+/* globals.css
+   Defines root color variables, font imports, reset styles, and global element styles (body, h1–h3, a).
+   This keeps global styling consistent across all pages and components.
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Global Variables */
+:root {
+  --max-width: 900px;
+  --accent-color: #2e7d32;
+  --bg-color: #f9f9f9;
+  --text-color: #2e2e2e;
+}
+
+/* Reset + Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Basic Element Styling */
+h1, h2, h3 {
+  color: var(--accent-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

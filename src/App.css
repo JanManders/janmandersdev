@@ -1,33 +1,39 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+/* App.css
+   Contains reusable layout and component-specific styles:
+   - .layout-wrapper: common page container
+   - .hero-banner: styled intro section
+   - .section-divider: decorative horizontal line
+   - .chart-wrapper: Recharts container spacing and layout
+*/
 
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  background-color: #f8f9f9;
-  color: #2e2e2e;
-  line-height: 1.6;
-}
-
-header, section {
-  max-width: 900px;
+/* Layout container for all pages */
+.layout-wrapper {
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 2rem;
 }
 
-h1, h2, h3 {
-  color: #2e7d32; /* Forest green */
+/* Hero banner for home page */
+.hero-banner {
+  background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
 }
 
-a {
-  color: #2e7d32;
-  text-decoration: none;
+.hero-banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--accent-color);
 }
 
-a:hover {
-  text-decoration: underline;
+.hero-banner p {
+  font-size: 1.2rem;
+  color: #4b4b4b;
+  margin-top: 0.5rem;
 }
 
+/* Decorative horizontal divider */
 .section-divider {
   height: 2px;
   background: repeating-linear-gradient(
@@ -41,45 +47,10 @@ a:hover {
   border: none;
 }
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Dashboard chart container */
+.chart-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-} */
-
-/* .card {
-  padding: 2em;
-} */
-
-/* .read-the-docs {
-  color: #888;
-} */
