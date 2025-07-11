@@ -1,21 +1,24 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
 
 function App() {
   return (
-    <div>
-      <header style={{ padding: '1rem', backgroundColor: '#f5f5f5' }}>
+    <Router>
+      <header>
         <h1>Jan Manders</h1>
         <nav>
-          <a href="/">Home</a> | <a href="/dashboard">Dashboard</a>
+          <Link to="/">Home</Link> | <Link to="/dashboard">Dashboard</Link>
         </nav>
       </header>
       <main style={{ padding: '2rem' }}>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I’m a data engineer with a passion for clean infrastructure, insightful analytics, and reliable pipelines.</p>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </main>
-    </div>
+    </Router>
   )
 }
 
 export default App
-
