@@ -1,9 +1,52 @@
-#root {
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f8f9f9;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+header, section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: #2e7d32; /* Forest green */
+}
+
+a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section-divider {
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #81c784,
+    #81c784 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  margin: 2rem 0;
+  border: none;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
 /* .logo {
   height: 6em;
